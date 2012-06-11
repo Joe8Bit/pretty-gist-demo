@@ -6,7 +6,50 @@ html {
 	background-size: cover;
 }
 
+body {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 13px;
+	color: #222;
+}
+
 .wrapper {
 	width: 600px;
 	margin: 30px auto;
+}
+
+#github-logo-large {
+	width: 242px;
+	height: 106px;
+	background: url("github-large.png") no-repeat;
+	margin-bottom: 35px;
+}
+
+.description {
+	text-shadow: 1px 1px 1px #fff;
+	padding-bottom: 25px;
+	border-bottom: 1px solid rgba(0,0,0,0.5);
+	line-height: 140%;
+}
+
+.usage {
+	border-top: 1px solid rgba(255,255,255,0.5);
+	text-shadow: 1px 1px 1px #fff;
+	padding: 20px 0px 10px;
+	line-height: 140%;
+}
+
+h2 {
+	margin: 15px 0px 15px;
+}
+
+.options {
+	text-shadow: 1px 1px 1px #fff;
+	margin-bottom: 20px;
+}
+
+.info {
+	text-shadow: 1px 1px 1px #fff;
+	margin: 30px 0px;
+	padding: 20px 0px 0px;
+	border-top: 1px solid rgba(0,0,0,0.3);
 }

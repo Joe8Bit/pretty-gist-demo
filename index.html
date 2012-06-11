@@ -11,6 +11,11 @@
 	<title>Pretty Gist</title>
 	<meta name="description" content="A jQuery plugin to make prettier and more functional embedded Github Gists">
 
+	<!-- **************************************************************
+	Hello curious stranger! You're probably looking at this source to see how the Pretty Gist works, however, this demo is a little more complex than it needs to be, so if you want a SUPER simple one, then just follow this link: 
+	http://www.joepettersson.com/demo/pretty-gist/simple/ 
+	************************************************************** -->
+
 	<meta name="viewport" content="width=device-width">
 
 	<!-- The core (and required) stylesheet -->
@@ -31,18 +36,40 @@
 
 	<script type="text/javascript">
 		$(document).ready(function(){
-			// In this demo I'm prettifying all of the gists on a page, however, if you want just one to be prettified then just swap out .gist for it's unique ID: in the form gist-[id]
-			$(".gist").prettyGist();
+			$("#gist-2909925").prettyGist();
+			$("#gist-2909953").prettyGist({
+				extendedHeader: false
+			});
+			$("#gist-2909965").prettyGist({
+				extendedHeader: false,
+				showFooter: false
+			});
 		});
 	</script>
 </head>
 <body>
 
+	<!-- Github ribbon -->
+	<a href="https://github.com/joepettersson/pretty-gist"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+	<!-- Github ribbon -->
+
 	<!-- This wrapper div is only here for the demo, you can ignore it -->
 	<div class="wrapper">
-		<!-- This is simply an embedded Github gist, taken right from their site you don't need to do anymore than add it where you want it within your page -->
-		<script src="https://gist.github.com/2902410.js"></script>
-		<script src="https://gist.github.com/2260182.js?file=hack.sh"></script>
+
+		<div id="github-logo-large"></div>
+
+		<div class="description">We all love Github, but the embedded Gists aren't great: they're drab and lack some functionality. Pretty Gist is a jQuery plugin to make prettier and more functional embedded Github Gists. It's super simple to use, and can easily enhance Gists already embedded on your pages by just dropping it in.</div>
+		<div class="usage simple">In it's simplest form, with syntax highlighting it styles an embedded GitHub Gist thusly (note the code to use it is within the embedded Gist!):</div>
+
+		<script src="https://gist.github.com/2909925.js"></script>
+
+		<h2>Options</h2>
+
+		<div class="options">There are a couple of different options available for formatting and styling your Gists:</div>
+		<script src="https://gist.github.com/2909953.js"></script>
+		<script src="https://gist.github.com/2909965.js"></script>
+
+		<div class="info">For more information and licensing, please consult the <a href="https://github.com/JoePettersson/pretty-gist">Github repo</a>.</div>
 	</div>
 
 </body>
