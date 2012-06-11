@@ -17,11 +17,15 @@ body {
 	margin: 30px auto;
 }
 
+.social {
+	margin-bottom: 25px;
+}
+
 #github-logo-large {
 	width: 242px;
 	height: 106px;
 	background: url("github-large.png") no-repeat;
-	margin-bottom: 35px;
+	margin-bottom: 45px;
 }
 
 .description {
